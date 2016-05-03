@@ -76,6 +76,34 @@ a:link {
 		float:left;
 	}
 
+  .inner-item{
+    width:100%;
+    height: 100%;
+    width: 100%
+  }
+
+  .inner-item a{
+    display: block;
+    margin-top: 150px;
+    color: green;
+  }
+
+  .work {
+    border: 1px red dotted;
+  }
+
+  #work1{
+    background-color: red;
+  }
+
+  #work2{
+    background-color: green;
+  }
+
+  #work3{
+    background-color: blue;
+  }
+
   #item1 {
     background-image: url("../images/headshot3.png");
     background-color: white;
