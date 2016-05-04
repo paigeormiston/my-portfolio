@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
   $('#wrapper').scrollTo('#item2', 0);
+  setTimeout('document.getElementById("header").style.display = "none"', 1000);
+  setTimeout('document.getElementById("header2").style.display = "block"', 1000);
 
 	$('a.panel').click(function () {
 
@@ -10,6 +12,13 @@ $(document).ready(function() {
 		current = $(this);
 
 		$('#wrapper').scrollTo($(this).attr('href'), 1200, {easing: 'easeInOutCirc'});
+    if($(this).attr('href') != "#item1" && $(this).attr('href') != "#item2" && $(this).attr('href') != "#item3") {
+      setTimeout('document.getElementById("aboutbutton2").style.display = "none"', 800);
+      setTimeout('document.getElementById("workbutton2").style.display = "none"', 800);
+    } else {
+      document.getElementById("aboutbutton2").style.display = "inline";
+      document.getElementById("workbutton2").style.display = "inline";
+    }
 
 		return false;
 	});
@@ -17,7 +26,6 @@ $(document).ready(function() {
 	$(window).resize(function () {
 		resizePanel();
 	});
-
 
 });
 
