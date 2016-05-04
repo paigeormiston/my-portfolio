@@ -20,7 +20,30 @@ $(document).ready(function() {
       document.getElementById("workbutton2").style.display = "inline";
     }
 
+
+    if($(this).attr('href') == "#item3" || $(this).attr('href') == "#item5" || $(this).attr('href') == "#item6") {
+      setTimeout('document.getElementById("nav-circles").style.display = "block"', 800);
+      if($(this).attr('href') == "#item3") {
+        document.getElementById("circle1").className = "filledcircle";
+        document.getElementById("circle2").className = "circle";
+        document.getElementById("circle3").className = "circle";
+      }
+      if($(this).attr('href') == "#item5") {
+        document.getElementById("circle2").className = "filledcircle";
+        document.getElementById("circle1").className = "circle";
+        document.getElementById("circle3").className = "circle";
+      }
+      if($(this).attr('href') == "#item6") {
+        document.getElementById("circle3").className = "filledcircle";
+        document.getElementById("circle1").className = "circle";
+        document.getElementById("circle2").className = "circle";
+      }
+    } else {
+      document.getElementById("nav-circles").style.display = "none";
+    }
+
 		return false;
+
 	});
 
 	$(window).resize(function () {

@@ -116,10 +116,6 @@ a:link {
     color: green;
   }
 
-  .work {
-    border: 1px red dotted;
-  }
-
   #item1 {
     background-image: url("../images/headshot3.png");
     background-color: white;
@@ -129,15 +125,19 @@ a:link {
   }
 
   #item3 {
-    background-image: url("../images/myrge-thumbnail.png");
-		background-size: 50%;
-		background-position: right bottom;
+    /* background-image: url("../images/myrge-thumbnail.png"); */
+		/* background-size: 50%; */
+		/* background-position: right bottom; */
 		background-color: #F7EBE2;
-		background-repeat: no-repeat;
+		/* background-repeat: no-repeat; */
   }
 
 	#item5 {
 		background-color: red;
+	}
+
+	#item6 {
+		background-color: purple;
 	}
 
 	.content {
@@ -173,6 +173,71 @@ a:link {
   z-index:-100;
 }
 
+#nav-circles {
+	mix-blend-mode: difference;
+	position:fixed;
+	height: 50px;
+	display:none;
+	margin-top: 25%;
+	z-index:9;
+	width: 100%;
+	padding: 20px 0 0 0;
+	float: right;
+	margin-left: 94%;
+}
+
+.container > div {
+	float: right;
+}
+
+.filledcircle {
+	margin-top: 7px;
+	display: block;
+	height: 6px;
+	width: 6px;
+	border-style: solid;
+	background-color: white;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 7px;
+	z-index:9;
+
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.5s;
+}
+
+.circle {
+	margin-top: 7px;
+	display: block;
+	height: 6px;
+  width: 6px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+  border-radius: 7px;
+	z-index:9;
+
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.5s;
+}
+
+.circle:hover {
+	background-color: white;
+	-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
 
 .fullscreen-bg {
   position: fixed;
