@@ -117,11 +117,7 @@ a:link {
   }
 
   #item1 {
-    background-image: url("../images/headshot3.png");
     background-color: white;
-    background-size: 40%;
-    background-position: left bottom;
-    background-repeat: no-repeat;
   }
 
   #item3 {
