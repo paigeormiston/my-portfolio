@@ -2,9 +2,11 @@ body {
 	height:100%;
 	width:100%;
 	margin:0;padding:0;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 }
 
-#header{
+#header {
   position:fixed;
   height: 50px;
   display:block;
@@ -27,10 +29,47 @@ body {
   z-index:9;
   text-align:center;
   padding: 20px 0 0 0;
+	top:0px;
 }
 
-#header2{
-  top:0px;
+.nextarrow {
+	color: white;
+	mix-blend-mode: difference;
+	display: block;
+	position: fixed;
+	width: 100%;
+	margin-left: 49%;
+	z-index: 9;
+	top:90%;
+}
+
+img.next {
+	height: 15px;
+}
+
+img.next:hover {
+	cursor: pointer;
+	color: #C9C9C9;
+}
+
+.worktitle {
+	width: 50%;
+	color: white;
+	mix-blend-mode: difference;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: .2em;
+	font-size: 2em;
+}
+
+.work-description {
+	color: white;
+	mix-blend-mode: difference;
+	text-transform: uppercase;
+	font-size: .9em;
+	letter-spacing: .1em;
+	margin-top: .5em;
 }
 
 #aboutbutton {
@@ -121,19 +160,27 @@ a:link {
   }
 
   #item3 {
-    /* background-image: url("../images/myrge-thumbnail.png"); */
-		/* background-size: 50%; */
-		/* background-position: right bottom; */
+    background-image: url("../images/myrge-thumbnail.png");
+		background-size: 60%;
+		background-position: right bottom;
 		background-color: #F7EBE2;
-		/* background-repeat: no-repeat; */
+		background-repeat: no-repeat;
   }
 
 	#item5 {
-		background-color: red;
+		background-image: url("../images/able-thumbnail.png");
+		background-size: 60%;
+		background-position: right bottom;
+		background-color: #DABFD2;
+		background-repeat: no-repeat;
 	}
 
 	#item6 {
-		background-color: purple;
+		background-image: url("../images/unspo-mockup.jpg");
+		background-size: 100%;
+		background-position: center;
+		background-color: #DABFD2;
+		background-repeat: no-repeat;
 	}
 
 	.content {
@@ -143,6 +190,13 @@ a:link {
     margin: 0 auto;
 		position:relative;
     z-index: 100;
+	}
+
+	.textarea {
+		position: relative;
+		width: 100%;
+		margin-left: 5%;
+		top:50%;
 	}
 
   .about-content {
@@ -172,38 +226,18 @@ a:link {
 #nav-circles {
 	mix-blend-mode: difference;
 	position:fixed;
-	height: 50px;
-	display:none;
-	margin-top: 25%;
-	z-index:9;
-	width: 100%;
-	padding: 20px 0 0 0;
-	float: right;
-	margin-left: 94%;
+	display: none;
+ 	top:50%;
+	z-index:1;
+	right: 5%;
 }
 
 .container > div {
 	float: right;
 }
 
-.filledcircle {
-	margin-top: 7px;
-	display: block;
-	height: 6px;
-	width: 6px;
-	border-style: solid;
+.filled {
 	background-color: white;
-	border-color: white;
-	border-width: 2px;
-	border-radius: 7px;
-	z-index:9;
-
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	/* ...and now for the proper property */
-	transition:.5s;
 }
 
 .circle {
@@ -233,6 +267,17 @@ a:link {
   -webkit-transition:.5s;
   /* ...and now for the proper property */
   transition:.5s;
+}
+
+.lilarrow {
+	position: relative;
+	height: .7em;
+}
+
+a.worklink {
+	margin: 0;
+	padding: 0;
+	top: 0;
 }
 
 .fullscreen-bg {
