@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+  $('img.next').hide();
+  $('#nav-circles').hide();
   $('#wrapper').scrollTo('#item2', 0);
   setTimeout('document.getElementById("header").style.display = "none"', 1000);
   setTimeout('document.getElementById("header2").style.display = "block"', 1000);
@@ -24,6 +25,15 @@ $(document).ready(function() {
       setTimeout('document.getElementById("workbutton2").style.display = "inline"', 800);
     }
 
+    if(currentPanel.attr("href") == "#item1" || currentPanel.attr("href") == "#item2") {
+      $('img.next').hide();
+      $('#nav-circles').hide();
+      return;
+    } else {
+      $('img.next').show();
+      $('#nav-circles').show();
+    }
+
     updateCircles($(this));
 
 	});
@@ -31,6 +41,7 @@ $(document).ready(function() {
 	$(window).resize(function () {
 		resizePanel();
 	});
+
 
   $('img.next').click(function (e) {
 

@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+
  // Defining a function to set size for #hero
     function fullscreen(){
         jQuery('#hero').css({
